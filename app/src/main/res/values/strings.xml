@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RetrofitBaseProject</string>
+
+    <string name="sy">首页</string>
+    <string name="bf">比分</string>
+    <string name="jc">竞猜</string>
+    <string name="wd">我的</string>
+
+
+
+    <!--版本更新-->
+    <string name="fxxbb">发现新版本</string>
+    <string name="app_yhzs">以后再说</string>
+    <string name="app_xzgx">选择更新</string>
+    <string name="dqyszxbb">当前已是最新版本</string>
+</resources>

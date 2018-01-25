@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
-
+configurations.all {//解决导入Glide的问题
+    resolutionStrategy.force 'com.android.support:support-annotations:23.1.0'
+}
 android {
     signingConfigs {
         release {
@@ -56,4 +58,8 @@ dependencies {
     // Net
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    //Gson
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile project(':takephoto_library')
 }

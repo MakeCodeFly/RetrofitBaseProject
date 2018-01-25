@@ -6,11 +6,20 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/fm_tv_select"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:padding="10dp"
         android:text="FragmentFour"
         android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/fm_iv_logo"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
 
 
 </LinearLayout>

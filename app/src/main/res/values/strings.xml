@@ -13,4 +13,10 @@
     <string name="app_yhzs">以后再说</string>
     <string name="app_xzgx">选择更新</string>
     <string name="dqyszxbb">当前已是最新版本</string>
+
+    <string name="pz">拍照</string>
+    <string name="xzzp">选择图片</string>
+    <string name="ts">提示</string>
+    <string name="qx">取消</string>
+    <string name="qd">确定</string>
 </resources>

@@ -9,10 +9,13 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 环形的进度条
- * 
- * @author lwz <lwz0316@gmail.com>
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : 环形的进度条
+ *     email:15695947865@139.com
+ * </pre>
  */
+
 public class CircularProgressBar extends View {
 	
 	private int mDuration = 100;

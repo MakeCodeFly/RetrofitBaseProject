@@ -1,8 +1,5 @@
 package com.szhrnet.taoqiapp.widget.customdialog;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
@@ -19,6 +16,18 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.szhrnet.taoqiapp.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : ActionSheetDialog类
+ *     email:15695947865@139.com
+ * </pre>
+ */
 public class ActionSheetDialog {
 	private Context context;
 	private Dialog dialog;

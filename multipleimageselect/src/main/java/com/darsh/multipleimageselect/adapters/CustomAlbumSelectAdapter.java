@@ -7,14 +7,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.darsh.multipleimageselect.R;
 import com.darsh.multipleimageselect.models.Album;
 
 import java.util.ArrayList;
-
-import static android.R.attr.path;
 
 /**
  * Created by Darshan on 4/14/2015.

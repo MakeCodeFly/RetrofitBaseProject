@@ -8,6 +8,14 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : CenterDrawableTextView类
+ *     email:15695947865@139.com
+ * </pre>
+ */
+
 @SuppressLint("AppCompatCustomView")
 public class CenterDrawableTextView extends TextView {
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)

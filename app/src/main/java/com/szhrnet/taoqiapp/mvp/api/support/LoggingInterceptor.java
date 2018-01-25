@@ -32,11 +32,13 @@ import okio.Buffer;
 import okio.BufferedSource;
 
 /**
- * Retrofit2 Logger拦截器。
- *
- * @author yuyh.
- * @date 16/8/6.
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : Retrofit2 Logger拦截器。
+ *     email:15695947865@139.com
+ * </pre>
  */
+
 public final class LoggingInterceptor implements Interceptor {
     private static final Charset UTF8 = Charset.forName("UTF-8");
 

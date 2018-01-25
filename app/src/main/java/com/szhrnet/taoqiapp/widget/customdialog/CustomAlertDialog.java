@@ -16,6 +16,15 @@ import android.widget.TextView;
 
 import com.szhrnet.taoqiapp.R;
 
+
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : CustomAlertDialog类
+ *     email:15695947865@139.com
+ * </pre>
+ */
+
 public class CustomAlertDialog {
     private Context context;
     private Dialog dialog;

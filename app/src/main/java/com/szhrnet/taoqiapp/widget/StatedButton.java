@@ -17,8 +17,11 @@ import com.szhrnet.taoqiapp.R;
 
 
 /**
- * @author Zou Juequn
- * @time 2017-07-17
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : StatedButton类
+ *     email:15695947865@139.com
+ * </pre>
  */
 
 @SuppressLint("AppCompatCustomView")

@@ -1,6 +1,12 @@
 package com.szhrnet.taoqiapp.utils;
 
-
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : EventBusModel类
+ *     email:15695947865@139.com
+ * </pre>
+ */
 public class EventBusModel {
 
     private String data;

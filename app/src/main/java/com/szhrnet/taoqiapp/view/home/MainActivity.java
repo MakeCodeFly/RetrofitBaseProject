@@ -3,7 +3,6 @@ package com.szhrnet.taoqiapp.view.home;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,7 +10,6 @@ import android.view.View;
 
 import com.szhrnet.taoqiapp.R;
 import com.szhrnet.taoqiapp.base.BaseActivity;
-import com.szhrnet.taoqiapp.base.BaseApplication;
 import com.szhrnet.taoqiapp.helper.BottomNavigationViewHelper;
 import com.szhrnet.taoqiapp.helper.NavHelper;
 

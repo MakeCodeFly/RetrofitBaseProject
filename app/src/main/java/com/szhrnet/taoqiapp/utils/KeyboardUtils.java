@@ -11,7 +11,13 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
 import com.szhrnet.taoqiapp.base.BaseApplication;
-
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : KeyboardUtils类
+ *     email:15695947865@139.com
+ * </pre>
+ */
 
 public final class KeyboardUtils {
 

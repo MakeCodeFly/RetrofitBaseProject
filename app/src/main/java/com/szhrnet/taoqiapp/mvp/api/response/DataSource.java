@@ -1,10 +1,14 @@
 package com.szhrnet.taoqiapp.mvp.api.response;
 
+
 /**
- * 数据源接口定义
- *
- * @version 1.0.0
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : 数据源接口定义 DataSource类
+ *     email:15695947865@139.com
+ * </pre>
  */
+
 public interface DataSource {
 
     /**
@@ -17,7 +21,7 @@ public interface DataSource {
     }
 
     /**
-     * 只关注成功的接口
+     * 成功的接口
      *
      * @param <T> 任意类型
      */
@@ -28,7 +32,7 @@ public interface DataSource {
     }
 
     /**
-     * 只关注失败的接口
+     * 失败的接口
      */
     interface FailedCallback {
         // 数据加载失败, 网络请求失败

@@ -3,7 +3,6 @@ package com.szhrnet.taoqiapp.mvp.contract;
 
 import com.szhrnet.taoqiapp.base.BaseContract;
 import com.szhrnet.taoqiapp.mvp.model.LoginModel;
-import com.szhrnet.taoqiapp.mvp.model.UserAccountModel;
 
 /**
  * <pre>

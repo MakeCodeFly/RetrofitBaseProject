@@ -1,7 +1,11 @@
 package com.szhrnet.taoqiapp.mvp.model;
 
 /**
- * Created by Administrator on 2017/12/2.
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : LoginModel类
+ *     email:15695947865@139.com
+ * </pre>
  */
 
 public class LoginModel {

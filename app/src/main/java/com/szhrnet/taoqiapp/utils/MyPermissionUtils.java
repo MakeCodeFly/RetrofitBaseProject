@@ -11,9 +11,6 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 
-
-import com.szhrnet.taoqiapp.R;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -7,7 +7,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.darsh.multipleimageselect.R;
 import com.darsh.multipleimageselect.models.Image;

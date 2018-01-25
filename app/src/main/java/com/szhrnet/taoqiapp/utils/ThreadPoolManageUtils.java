@@ -5,7 +5,11 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 /**
- * @version 1.0.0
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : 线程管理类
+ *     email:15695947865@139.com
+ * </pre>
  */
 public class ThreadPoolManageUtils {
     private static final String TAG = ThreadPoolManageUtils.class.getSimpleName();

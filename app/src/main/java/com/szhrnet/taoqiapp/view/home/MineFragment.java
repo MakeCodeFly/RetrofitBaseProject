@@ -18,7 +18,6 @@ import com.jph.takephoto.permission.TakePhotoInvocationHandler;
 import com.szhrnet.taoqiapp.R;
 import com.szhrnet.taoqiapp.base.BaseFragment;
 import com.szhrnet.taoqiapp.utils.GlideUtils;
-import com.szhrnet.taoqiapp.utils.LogUtils;
 import com.szhrnet.taoqiapp.utils.PhotoSelectUtils;
 
 import butterknife.BindView;

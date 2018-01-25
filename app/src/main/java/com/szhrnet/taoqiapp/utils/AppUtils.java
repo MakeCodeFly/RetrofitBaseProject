@@ -10,7 +10,6 @@ import android.util.DisplayMetrics;
 import android.view.WindowManager;
 import android.widget.EditText;
 
-
 import com.bigkoo.svprogresshud.SVProgressHUD;
 
 import java.text.DecimalFormat;

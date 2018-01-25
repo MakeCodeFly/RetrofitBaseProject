@@ -14,7 +14,11 @@ import com.szhrnet.taoqiapp.R;
 import java.io.File;
 
 /**
- * Created by Administrator on 2017/12/6.
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : 照片选择类
+ *     email:15695947865@139.com
+ * </pre>
  */
 
 public class PhotoSelectUtils {

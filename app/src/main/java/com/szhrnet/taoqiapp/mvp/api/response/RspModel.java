@@ -1,8 +1,10 @@
 package com.szhrnet.taoqiapp.mvp.api.response;
-
 /**
- * @author qiujuer Email:qiujuer@live.cn
- * @version 1.0.0
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : RspModel返回类
+ *     email:15695947865@139.com
+ * </pre>
  */
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class RspModel<T> {

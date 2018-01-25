@@ -6,6 +6,14 @@ import android.graphics.drawable.Drawable;
 import android.view.Gravity;
 import android.widget.TextView;
 
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : CenterDrawableHelper类
+ *     email:15695947865@139.com
+ * </pre>
+ */
+
 final class CenterDrawableHelper {
     private static void onCenterDraw(TextView view, Canvas canvas, Drawable drawable, int gravity) {
         int drawablePadding = view.getCompoundDrawablePadding();

@@ -22,6 +22,14 @@ import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
 
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : HeaderInterceptor类
+ *     email:15695947865@139.com
+ * </pre>
+ */
+
 public final class HeaderInterceptor implements Interceptor {
 
     @Override

@@ -1,10 +1,7 @@
 package com.szhrnet.taoqiapp.view.home;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.view.View;
-
 
 import com.szhrnet.taoqiapp.R;
 import com.szhrnet.taoqiapp.base.BaseFragment;

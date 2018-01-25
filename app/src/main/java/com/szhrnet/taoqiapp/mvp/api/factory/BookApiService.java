@@ -15,8 +15,6 @@
  */
 package com.szhrnet.taoqiapp.mvp.api.factory;
 
-
-
 import com.szhrnet.taoqiapp.mvp.api.response.RspModel;
 import com.szhrnet.taoqiapp.mvp.model.LoginModel;
 
@@ -24,6 +22,16 @@ import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
+
+
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : BookApiService类
+ *     email:15695947865@139.com
+ * </pre>
+ */
+
 
 public interface BookApiService {
 

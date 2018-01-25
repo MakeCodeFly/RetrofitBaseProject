@@ -20,9 +20,14 @@ import com.szhrnet.taoqiapp.utils.AppUtils;
 
 
 /**
- * @author Zou Juequn
- * @date 2016.7.14
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : TitleView类
+ *     email:15695947865@139.com
+ * </pre>
  */
+
+
 public class TitleView extends RelativeLayout {
 
     private Context mContext;

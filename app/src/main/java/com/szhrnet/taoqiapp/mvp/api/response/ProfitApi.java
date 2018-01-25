@@ -16,7 +16,6 @@
 package com.szhrnet.taoqiapp.mvp.api.response;
 
 
-
 import com.szhrnet.taoqiapp.config.URLConfig;
 import com.szhrnet.taoqiapp.mvp.api.factory.BookApiService;
 import com.szhrnet.taoqiapp.mvp.api.support.HeaderInterceptor;
@@ -25,10 +24,18 @@ import com.szhrnet.taoqiapp.mvp.api.support.LoggingInterceptor;
 
 import java.util.concurrent.TimeUnit;
 
-
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : ProfitApi类
+ *     email:15695947865@139.com
+ * </pre>
+ */
+
 
 public class ProfitApi {
 

@@ -154,7 +154,7 @@ public class QuizFragment extends BaseFragment {
                 new CustomAlertDialog(mContext)
                         .builder()
                         .setTitle("错误信息")
-                        .setMsg("你的手机sd卡出现问题，建议删除不需要的文件，否则收不到图片和视频等打文件")
+                        .setMsg("你的手机sd卡出现问题，建议删除不需要的文件，否则收不到图片和视频等大文件")
                         .setPositiveButton("确定", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {

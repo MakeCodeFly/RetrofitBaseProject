@@ -5,13 +5,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.szhrnet.taoqiapp.R;
-import com.szhrnet.taoqiapp.base.BaseApplication;
 import com.szhrnet.taoqiapp.base.BaseFragment;
 import com.szhrnet.taoqiapp.mvp.contract.ExampleContract;
 import com.szhrnet.taoqiapp.mvp.model.LoginModel;
 import com.szhrnet.taoqiapp.mvp.presenter.ExamplePresenter;
-import com.szhrnet.taoqiapp.utils.AppUtils;
-import com.szhrnet.taoqiapp.utils.LogUtils;
 
 //import butterknife.BindView;
 

@@ -6,7 +6,13 @@ import android.text.TextUtils;
 
 import com.szhrnet.taoqiapp.base.BaseApplication;
 
-
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : UserAccount类
+ *     email:15695947865@139.com
+ * </pre>
+ */
 public class UserAccount {
     private static final String ID = "id";
     private static final String USERNAME = "username";

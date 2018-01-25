@@ -1,9 +1,14 @@
 package com.szhrnet.taoqiapp.mvp.api.response;
 
+
 /**
- * Created by tangzelai on 2017/7/4.
- * com.szhrnet.factory.model.api.home
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : PageListModel类
+ *     email:15695947865@139.com
+ * </pre>
  */
+
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class PageListModel<T> {    private boolean is_last;
     private T list;

@@ -2,7 +2,11 @@ package com.szhrnet.taoqiapp.mvp.model;
 
 
 /**
- * Created by Administrator on 2018/1/2.
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : GetAppInfoModel类
+ *     email:15695947865@139.com
+ * </pre>
  */
 
 public class GetAppInfoModel {

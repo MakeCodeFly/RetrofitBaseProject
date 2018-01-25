@@ -8,15 +8,15 @@ import android.view.Gravity;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+
 /**
- * 中间带有进度百分比文字显示的环形进度条
- * 
- * <p>该类是对 CircularProgressBar（环形进度条）类的一个包装，添加了 文字显示部分</p>
- * <p>实现了 进度条进度改变的监听 {@linkOnProgressChangeListener}，从而得到进度的百分比，然后显示到 TextView 上</p>
- * 
- * @author lwz <lwz0316@gmail.com>
- *
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : 中间带有进度百分比文字显示的环形进度条
+ *     email:15695947865@139.com
+ * </pre>
  */
+
 public class RateTextCircularProgressBar extends FrameLayout implements CircularProgressBar.OnProgressChangeListener {
 
 	private CircularProgressBar mCircularProgressBar;

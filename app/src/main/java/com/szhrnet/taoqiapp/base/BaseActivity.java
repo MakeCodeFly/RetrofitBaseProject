@@ -13,7 +13,6 @@ import com.szhrnet.taoqiapp.utils.EventBusModel;
 import com.szhrnet.taoqiapp.utils.EventBusUtils;
 import com.szhrnet.taoqiapp.utils.ToastUtils;
 
-
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
@@ -123,10 +122,10 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onMessageEvent(EventBusModel eventBusModel) {};
+    public void onMessageEvent(EventBusModel eventBusModel) {}
 
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onMessageEvent(String eventType) {};
+    public void onMessageEvent(String eventType) {}
 
 }

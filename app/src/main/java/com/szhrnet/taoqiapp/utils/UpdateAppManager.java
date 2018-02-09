@@ -24,7 +24,7 @@ import static android.content.Context.DOWNLOAD_SERVICE;
  * </pre>
  */
 @SuppressWarnings("unused")
-public class NewUpdateAppManager {
+public class UpdateAppManager {
 
     public final static String SAVE_APP_NAME = "YingLiCai.apk";
 

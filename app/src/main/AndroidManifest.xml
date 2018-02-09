@@ -11,11 +11,12 @@
 
     <!-- 读取存储权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <!-- 写存储权限，OSS需要 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 更新时候需要的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
 
     <application

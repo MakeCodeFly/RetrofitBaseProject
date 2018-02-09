@@ -15,6 +15,8 @@
  */
 package com.szhrnet.taoqiapp.mvp.api.support;
 
+import android.text.TextUtils;
+
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
@@ -161,17 +163,17 @@ public final class LoggingInterceptor implements Interceptor {
         if (!logHeaders && hasRequestBody) {
             requestStartMessage += " (" + requestBody.contentLength() + "-byte body)";
         }
-        logger.log(requestStartMessage);
+//        logger.log(requestStartMessage);
 
         if (logHeaders) {
             if (hasRequestBody) {
                 // Request body headers are only present when installed as a network interceptor. Force
                 // them to be included (when available) so there values are known.
                 if (requestBody.contentType() != null) {
-                    logger.log("Content-Type: " + requestBody.contentType());
+//                    logger.log("Content-Type: " + requestBody.contentType());
                 }
                 if (requestBody.contentLength() != -1) {
-                    logger.log("Content-Length: " + requestBody.contentLength());
+//                    logger.log("Content-Length: " + requestBody.contentLength());
                 }
             }
 
@@ -187,7 +189,7 @@ public final class LoggingInterceptor implements Interceptor {
             if (!logBody || !hasRequestBody) {
                 logger.log("--> END " + request.method());
             } else if (bodyEncoded(request.headers())) {
-                logger.log("--> END " + request.method() + " (encoded body omitted)");
+//                logger.log("--> END " + request.method() + " (encoded body omitted)");
             } else {
                 Buffer buffer = new Buffer();
                 requestBody.writeTo(buffer);
@@ -198,11 +200,10 @@ public final class LoggingInterceptor implements Interceptor {
                     charset = contentType.charset(UTF8);
                 }
 
-                logger.log("");
-                logger.log(buffer.readString(charset));
+//                logger.log("");
+                logger.log((String) TextUtils.concat("-------请求参数-------\n",buffer.readString(charset)));
 
-                logger.log(
-                        "--> END " + request.method() + " (" + requestBody.contentLength() + "-byte body)");
+//                logger.log("--> END " + request.method() + " (" + requestBody.contentLength() + "-byte body)");
             }
         }
 
@@ -212,27 +213,22 @@ public final class LoggingInterceptor implements Interceptor {
 
         ResponseBody responseBody = response.body();
         long contentLength = responseBody.contentLength();
-        String bodySize = contentLength != -1 ? contentLength + "-byte" : "unknown-length";
-        logger.log("<-- "
-                + response.code()
-                + ' '
-                + response.message()
-                + ' '
+//        String bodySize = contentLength != -1 ? contentLength + "-byte" : "unknown-length";
+        logger.log("-------请求路径-------\n"
                 + response.request().url()
                 + " ("
                 + tookMs
                 + "ms"
-                + (!logHeaders ? ", " + bodySize + " body" : "")
                 + ')');
 
         if (logHeaders) {
             Headers headers = response.headers();
             for (int i = 0, count = headers.size(); i < count; i++) {
-                logger.log(headers.name(i) + ": " + headers.value(i));
+//                logger.log(headers.name(i) + ": " + headers.value(i));
             }
 
             if (bodyEncoded(response.headers())) {
-                logger.log("<-- END HTTP (encoded body omitted)");
+//                logger.log("<-- END HTTP (encoded body omitted)");
             } else {
                 BufferedSource source = responseBody.source();
                 source.request(Long.MAX_VALUE); // Buffer the entire body.
@@ -245,11 +241,11 @@ public final class LoggingInterceptor implements Interceptor {
                 }
 
                 if (contentLength != 0) {
-                    logger.log("");
-                    logger.log(buffer.clone().readString(charset));
+//                    logger.log("");
+                    logger.log((String) TextUtils.concat("-------请求结果-------",buffer.clone().readString(charset)));
                 }
 
-                logger.log("<-- END HTTP (" + buffer.size() + "-byte body)");
+//                logger.log("<-- END HTTP (" + buffer.size() + "-byte body)");
             }
         }
 

@@ -11,12 +11,12 @@ android {
             storePassword 'retrofitbaseproject'
         }
     }
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.2'
     defaultConfig {
         applicationId "com.szhrnet.taoqiapp"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -26,12 +26,14 @@ android {
         release {
             signingConfig signingConfigs.release
             buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "String", "SERVER_HOST", "\"http://120.79.81.94\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
             signingConfig signingConfigs.release
             buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "String", "SERVER_HOST", "\"http://120.79.81.94\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -45,9 +47,9 @@ dependencies {
     })
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:27.1.0'
+    compile 'com.android.support:design:27.1.0'
     compile 'com.android.support:multidex:1.0.1'
-    compile 'com.android.support:design:26.0.0-alpha1'
     //注解
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'

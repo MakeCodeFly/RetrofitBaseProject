@@ -9,7 +9,4 @@
     <string name="selected">Выбрано</string>
     <string name="limit_exceeded">Можно выбрать максимум %d изображений</string>
 
-    <string name="permission_denied">Отсутствует разрешение!</string>
-    <string name="permission_denied_albums">Разрешите доступ к фотографиям, медиа и файлам на своём устройстве для просмотра альбомов</string>
-    <string name="permission_denied_images">Разрешите доступ к фотографиям, медиа и файлам на своём устройстве для просмотра изображений</string>
-</resources>
+   </resources>

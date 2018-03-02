@@ -46,35 +46,35 @@
 -keepattributes Signature
 -keepattributes Exceptions
 
-#
-#################butterknife###############
-#-keep class butterknife.** { *; }
-#-dontwarn butterknife.internal.**
-#-keep class **$$ViewBinder { *; }
-#-keepclasseswithmembernames class * {
-#   @butterknife.* <fields>;
-#}
-#-keepclasseswithmembernames class * {
-# @butterknife.* <methods>;
-#}
+
+################butterknife###############
+-keep class butterknife.** { *; }
+-dontwarn butterknife.internal.**
+-keep class **$$ViewBinder { *; }
+-keepclasseswithmembernames class * {
+   @butterknife.* <fields>;
+}
+-keepclasseswithmembernames class * {
+ @butterknife.* <methods>;
+}
 #
 #
 #################gson###############
-#-keepattributes Signature
-#-keepattributes *Annotation*
-#-keep class sun.misc.Unsafe { *; }
-#-keep class com.google.gson.stream.** { *; }
-## Application classes that will be serialized/deserialized over Gson
-#-keep class com.sunloto.shandong.bean.** { *; }
-#
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.sunloto.shandong.bean.** { *; }
+
 #
 #################androidEventBus###############
-#-keep class org.simple.** { *; }
-#-keep interface org.simple.** { *; }
-#-keepclassmembers class * {
-#    @org.simple.eventbus.Subscriber <methods>;
-#}
-#-keepattributes *Annotation*
+-keep class org.simple.** { *; }
+-keep interface org.simple.** { *; }
+-keepclassmembers class * {
+    @org.simple.eventbus.Subscriber <methods>;
+}
+-keepattributes *Annotation*
 
 
 

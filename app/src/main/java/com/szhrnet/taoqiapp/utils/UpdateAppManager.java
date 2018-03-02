@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.support.v4.content.FileProvider;
+import android.text.TextUtils;
 import android.widget.Toast;
 
 import java.io.File;
@@ -23,17 +24,20 @@ import static android.content.Context.DOWNLOAD_SERVICE;
  *     email:15695947865@139.com
  * </pre>
  */
+/**
+ * <pre>
+ *     author: MakeCodeFly
+ *     desc  : UpdateAPPManager版本更新管理（支持后台下载）
+ *     email:15695947865@139.com
+ * </pre>
+ */
 @SuppressWarnings("unused")
 public class UpdateAppManager {
 
-    public final static String SAVE_APP_NAME = "YingLiCai.apk";
 
-    public final static String SAVE_APP_LOCATION = "/download";
+    public final static String SAVE_APP_NAME = "retrofitbaseproject";
 
-
-    public final static String APP_FILE_NAME = "/sdcard"+SAVE_APP_LOCATION+ File.separator + SAVE_APP_NAME;
-
-
+    public static String fileApkName = "";
 
     public static DownloadManager mDownloadManager;
     public static long downloadId;
@@ -54,18 +58,19 @@ public class UpdateAppManager {
      */
     @SuppressWarnings("unused")
     public static void  showDownloadDialog( Context context,
-                                     String downLoadUrl,
-                                     String description,
-                                     String infoName) {
+                                            String downLoadUrl,
+                                            String description,
+                                            String infoName,String version) {
         context2 = context;
         //使用系统下载类
         mDownloadManager = (DownloadManager) context2.getSystemService(DOWNLOAD_SERVICE);
         Uri uri = Uri.parse(downLoadUrl);
         DownloadManager.Request request = new DownloadManager.Request(uri);
         request.setAllowedOverRoaming(false);
+        fileApkName = (String) TextUtils.concat(SAVE_APP_NAME,version,".apk");
 
         //创建目录下载
-        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "YingLiCai.apk");
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileApkName);
         // 把id保存好，在接收者里面要用
         downloadId = mDownloadManager.enqueue(request);
         //设置允许使用的网络类型，这里是移动网络和wifi都可以
@@ -128,7 +133,7 @@ public class UpdateAppManager {
      */
     public static void installAPK() {
         File apkFile =
-                new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "YingLiCai.apk");
+                new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), fileApkName);
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

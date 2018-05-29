@@ -13,6 +13,8 @@ import android.support.v4.content.FileProvider;
 import android.text.TextUtils;
 import android.widget.Toast;
 
+import com.szhrnet.taoqiapp.base.BaseApplication;
+
 import java.io.File;
 
 import static android.content.Context.DOWNLOAD_SERVICE;
@@ -137,13 +139,16 @@ public class UpdateAppManager {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            Uri apkUri = FileProvider.getUriForFile(context2, context2.getPackageName() + ".fileprovider", apkFile);
+            Uri apkUri = FileProvider.getUriForFile(context2, "cn.bingoogolapple.update.demo.fileprovider", apkFile);
+            LogUtils.e(BaseApplication.TAG,"---"+apkUri);
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             intent.setDataAndType(apkUri, "application/vnd.android.package-archive");
         } else {
             intent.setDataAndType(Uri.fromFile(apkFile), "application/vnd.android.package-archive");
         }
-        context2.startActivity(intent);
+        if (context2.getPackageManager().queryIntentActivities(intent, 0).size() > 0) {
+            context2.startActivity(intent);
+        }
     }
 
 

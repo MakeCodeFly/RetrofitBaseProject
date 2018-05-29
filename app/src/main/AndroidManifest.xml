@@ -17,7 +17,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <!-- 更新时候需要的权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-
+    <!-- 8.0系统以上下载更新app需要的权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
 
     <application
         android:allowBackup="true"
@@ -36,10 +37,9 @@
             </intent-filter>
         </activity>
 
-
         <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.szhrnet.taoqiapp.fileprovider"
+            android:name=".widget.MyProvider"
+            android:authorities="cn.bingoogolapple.update.demo.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
